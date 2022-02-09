@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --shadow-1: 0 .125rem .25rem rgba(201, 192, 192, 0.05);
+    --shadow-2: 0 .5rem 1rem rgba(201, 192, 192, 0.06);
+    --shadow-3: 0 1rem 3rem rgba(201, 192, 192, 0.04);
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-family: poppins;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+}
+
+::after,
+::before{
+    box-sizing: border-box;
+}
+
+/* tab section */
+.sk_tab{
+    width: 650px;
+    margin: 120px auto;
+}
+.sk_tab .tab_menu ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sk_tab .tab_menu ul li{  
+    display: block;
+    width: 20%;
+    height: 58px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.sk_tab .tab_menu ul li a {
+    display: block;
+    color: black;
+   border-bottom: 1px solid #ddd;
+}
+.sk_tab .tab_menu ul li a.active  {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+}
+
+ .sk_tab .tab_body .tab_pane{
+    display: none;
+}
+.sk_tab .tab_body .tab_pane.active {
+    display: block;
+}
